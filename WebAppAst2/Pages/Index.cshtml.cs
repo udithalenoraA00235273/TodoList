@@ -20,7 +20,28 @@ namespace WebAppAst2.Pages
 
         public void OnGet()
         {
+            if (name != null && description != null)
+            {
+                ResultSet = true;
+            }
 
         }
+
+        public void OnPost()
+        {
+
+
+
+        }
+        [FromQuery(Name = "name")]
+
+        public String name { get; set; }
+
+        [FromQuery(Name = "description")]
+
+        public String description { get; set; }
+
+        public bool ResultSet { get; set; }
     }
+
 }

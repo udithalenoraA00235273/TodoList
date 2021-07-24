@@ -10,7 +10,7 @@ namespace WebAppAst2.Data
     {
         [Key]
         public int Id { get; set; }
-        public Boolean Done { get; set;}
+        public Boolean Done { get; set; }
         [StringLength(255)]
         public String Name { get; set; }
         public String Desc { get; set; }
